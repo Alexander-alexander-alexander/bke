@@ -1,3 +1,4 @@
+#Dit is de eindopdracht van Machine learning met Python (I3) 
 import random
 
 from bke import MLAgent, is_winner, opponent, load, validate, RandomAgent, plot_validation, train, start, save

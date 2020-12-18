@@ -23,7 +23,7 @@ train(my_agent, 9000)
 my_agent.learning = False
 
 validation_agent = RandomAgent()
-
+#het moet 9 van de 10 keer winnen of gelijk spelen
 validation_result = validate(agent_x=my_agent, agent_o=validation_agent, iterations=1000)
 
 print ("Hieronder vindt u de resultaten van mijn 1000 spelletjes tegen een random agent:")

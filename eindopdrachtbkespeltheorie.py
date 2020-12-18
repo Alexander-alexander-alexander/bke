@@ -30,7 +30,7 @@ class MijnSpeler(EvaluationAgent):
 mijn_speler = MijnSpeler()
 my_random_agent = MyRandomAgent()
 validation_agent = my_random_agent
-
+#het moest 4 van de 5 winnen of gelijk spelen
 validation_result = validate(agent_x=mijn_speler, agent_o=validation_agent, iterations=5)
 
 print (validation_result)

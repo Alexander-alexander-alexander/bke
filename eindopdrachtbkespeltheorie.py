@@ -1,3 +1,4 @@
+#Dit is de eindopdracht voor Speltheorie met Python (I2)
 import random
 from bke import EvaluationAgent, start, can_win, is_winner
 

@@ -38,10 +38,13 @@ while True:
         print ("Wat leuk, daar gaan we!")
         print("\n")
         start(player_x=my_agent)
-        break
    elif answer.lower().startswith("n"):
         print ("Oh...oke, jammer.")
         exit()
       
+
+
+
+
 
 

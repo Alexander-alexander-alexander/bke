@@ -18,7 +18,7 @@ class MijnSpeler(EvaluationAgent):
             getal = getal + 30
         if board[6] == my_symbol:
             getal = getal + 40
-#       Waarom werkt dit niet? kunt u dat uitleggen?
+#       Waarom werkt wat hier onder staat (in het grijs) niet? Kunt u dat uitleggen?
 #       if can_win(board, my_symbol):
 #           getal = getal + 10
         if can_win(board, opponent_symbol):
@@ -37,5 +37,6 @@ print (validation_result)
 plot_validation(validation_result)
 
 start(player_x=mijn_speler, player_o =my_random_agent)
+
 
 

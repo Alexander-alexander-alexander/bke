@@ -1,7 +1,7 @@
 #Dit is de eindopdracht van Machine learning met Python (I3) 
 import random
 
-from bke import MLAgent, is_winner, opponent, load, validate, RandomAgent, plot_validation, train, start, save
+from bke import MLAgent, is_winner, opponent, load, validate, RandomAgent, plot_validation, train, start
  
  
 class MyAgent(MLAgent):
@@ -16,12 +16,11 @@ class MyAgent(MLAgent):
     
 random.seed(1)
 
-my_agent = MyAgent(alpha=1, epsilon=0.1)
-train(my_agent, 3000)
-for i in range(2):
-   train(my_agent, 8000)
-   if i == 1:
-        my_agent.learning = False
+my_agent = MyAgent(alpha=0.2, epsilon=0.1)
+
+train(my_agent, 9000)
+
+my_agent.learning = False
 
 validation_agent = RandomAgent()
 
@@ -38,13 +37,10 @@ while True:
         print ("Wat leuk, daar gaan we!")
         print("\n")
         start(player_x=my_agent)
-   elif answer.lower().startswith("n"):
+   else:
         print ("Oh...oke, jammer.")
         exit()
       
-
-
-
 
 
 
